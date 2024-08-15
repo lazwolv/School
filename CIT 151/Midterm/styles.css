@@ -1,0 +1,123 @@
+/*
+  Author: Lazaro Martinez
+  Date:   03/09/24
+*/
+
+html {
+  font-size: 12px;
+}
+
+/* reset styles */
+article,
+body,
+div,
+footer,
+header,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #dee9f9;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  border: 2px solid black;
+  box-shadow: 0 10px 6px -6px #777;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: white;
+}
+
+h1 {
+  color: #6b4343;
+  background-color: #fffff0;
+  font-size: 4em;
+  text-shadow: 3px -1px 2px grey;
+}
+
+h2 {
+  color: orange;
+  font-size: 2em;
+  font-family: "Bree Serif", sans-serif;
+}
+
+h1,
+h2 {
+  padding: 0.4em;
+  text-align: center;
+  font-family: "Calistoga", Cambria, Georgia, serif;
+}
+
+h3 {
+  color: yellow;
+  font-size: 1.5em;
+}
+
+article {
+  background-color: #425b5f;
+  padding: 3%;
+}
+
+article p:first-letter {
+  font-size: 3em;
+  line-height: 0.9em;
+  float: left;
+}
+
+aside {
+  border-radius: 25px;
+  width: 38%;
+  padding: 2%;
+  margin: 2%;
+  float: right;
+  background-color: #6e8953;
+  box-shadow: 2px 2px 2px rgb(52, 24, 15);
+}
+
+aside h3:first-letter {
+  text-shadow: 2px -1px 0 orange;
+}
+
+footer {
+  padding: 0.6em;
+  color: #6b4343;
+  background-color: ivory;
+  text-align: center;
+  clear: both;
+}
+
+footer p {
+  margin: 0.4em;
+  color: #6b4343;
+}
+
+.accent {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media print {
+  body,
+  .container,
+  aside,
+  article {
+    color: black;
+    background-color: white;
+  }
+}
+
+@page {
+  margin: 1in;
+}

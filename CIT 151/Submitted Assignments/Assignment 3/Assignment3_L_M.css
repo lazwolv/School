@@ -1,0 +1,20 @@
+/*
+    Author: Lazaro Martinez
+    Date:   02/12/24
+*/
+
+header,
+footer {
+  background-color: navy;
+}
+h2 {
+  background-color: khaki;
+}
+footer p {
+  text-align: right;
+  color: khaki;
+}
+header h1,
+#company {
+  color: white;
+}

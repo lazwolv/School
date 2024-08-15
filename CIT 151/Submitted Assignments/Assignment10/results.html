@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Spotted Wren Garden Center - Results</title>
+      <!--
+         Spotted Wren Garden Center Results page
+         Filename: hours.html
+      
+         Author:   
+         Date:     
+         HTML5 and CSS3 Illustrated Unit J, Independent Challenge 1
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+         <header>
+            <h1><a href="index.html"><img src="images/spotwren.gif" width="864" height="184" alt="Spotted Wren Garden Center"></a></h1>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="index.html">Home</a></li> 
+               <li><a href="hours.html">Hours</a></li>
+               <li><a href="resource.html">Resources</a></li>
+               <li><a href="consult.html">Consulting</a></li>
+            </ul>
+         </nav>
+         <article id="contentstart">
+            <h2>Your form has been submitted</h2>
+               <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+         </article>
+         <footer>
+            <p>548 N. 58th St. &#8226; Omaha, NE 68132 &#8226; (402) 555-9736</p>
+         </footer>
+      </div>
+   </body>
+</html>

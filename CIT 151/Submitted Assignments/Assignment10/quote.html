@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Spotted Wren Garden Center - Request a Quote</title>
+   <!--
+         Spotted Wren Garden Center Request a Quote page
+         Filename: quote.html
+      
+         Author:   Lazaro Martinez
+         Date:     04/22/2024
+         HTML5 and CSS3 Illustrated Unit J, Independent Challenge 1
+      -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <script src="modernizr.custom.40753.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link rel="icon" sizes="192x192" href="images/android.png">
+</head>
+
+<body>
+   <div class="container">
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+      <header>
+         <h1><a href="index.html"><img src="images/spotwren.gif" width="864" height="184"
+                  alt="Spotted Wren Garden Center"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="resource.html">Resources</a></li>
+            <li><a href="consult.html">Consulting</a></li>
+         </ul>
+      </nav>
+      <article id="contentstart">
+         <h2>Request a Quote</h2>
+         <p>Want to renew some overgrown hedges? Reimagine the landscaping around your house or yard? Save on water
+            bills with native plants?</p>
+         <p>Our professional landscapers can come by for a visit, free of charge. They'll listen to your ideas, offer up
+            their expertise, and provide you with a workplan, plant list, and cost estimate.</p>
+         <p>Take advantage of our experienced landscaping team to have the work done for you, or use the plan as the
+            starting point for a do-it-yourself project.</p>
+         <p>To get started, please provide the following information:</p>
+         <form action="results.html">
+            <fieldset class="contactinfo">
+               <legend>Contact Info</legend>
+               <label for="nameinput">
+                  Name
+                  <input type="text" name="name" id="nameinput" placeholder="First and Last name">
+               </label>
+               <label for="addressinput">
+                  Street Address
+                  <input type="text" name="address" id="addressinput">
+               </label>
+               <label for="zipinput">
+                  Zip Code
+                  <input type="text" name="zip" id="zipinput">
+               </label>
+               <label for="emailinput">
+                  Email
+                  <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+               </label>
+               <label for="phoneinput">
+                  Phone
+                  <input type="tel" name="phone" id="phoneinput">
+               </label>
+            </fieldset>
+            <fieldset class="timinginfo">
+               <legend>Best day(s) to schedule a visit</legend>
+               <label for="monday">
+                  <input type="checkbox" id="monday" name="days" value="Monday">
+                  Monday
+               </label>
+               <label for="tuesday">
+                  <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+                  Tuesday
+               </label>
+               <label for="wednesday">
+                  <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+                  Wednesday
+               </label>
+               <label for="thursday">
+                  <input type="checkbox" id="thursday" name="days" value="Thursday">
+                  Thursday
+               </label>
+               <label for="friday">
+                  <input type="checkbox" id="friday" name="days" value="Friday">
+                  Friday
+               </label>
+               <label for="saturday">
+                  <input type="checkbox" id="saturday" name="days" value="Saturday">
+                  Saturday
+               </label>
+               <label for="sunday">
+                  <input type="checkbox" id="sunday" name="days" value="Sunday">
+                  Sunday
+               </label>
+            </fieldset>
+            <fieldset class="jobtype">
+               <legend>Project Area</legend>
+               <label for="front">
+                  <input type="radio" id="front" name="area" value="House front">
+                  Front of House
+               </label>
+               <label for="border">
+                  <input type="radio" id="border" name="area" value="Border">
+                  Border of Property
+               </label>
+               <label for="multiple">
+                  <input type="radio" id="multiple" name="area" value="Multiple">
+                  Multiple Areas (please specify in Notes box below)
+               </label>
+               <label for="other">
+                  <input type="radio" id="other" name="area" value="Other">
+                  Other (please specify in Notes box below)
+               </label>
+            </fieldset>
+            <fieldset class="additionalinfo">
+               <legend>Additional Information</legend>
+               <label for="notes">
+                  Notes
+                  <textarea id="notes" name="notes" rows="4" cols="60">
+                     </textarea>
+               </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+               <input type="submit" id="submit" value="Submit Request">
+            </fieldset>
+         </form>
+      </article>
+      <footer>
+         <p>548 N. 58th St. &#8226; Omaha, NE 68132 &#8226; (402) 555-9736</p>
+      </footer>
+   </div>
+</body>
+
+</html>
